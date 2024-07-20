@@ -21,6 +21,7 @@ export default {
     newResponse.headers.set('Access-Control-Allow-Origin', request.headers.origin ? request.headers.origin : '*');
     newResponse.headers.set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     newResponse.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+    newResponse.headers.set('Cross-Origin-Resource-Policy', 'cross-origin');
   
     return newResponse;
   },
